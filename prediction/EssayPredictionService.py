@@ -26,8 +26,7 @@ class EssayPredictionService:
         return padded
 
 if __name__ == '__main__':
-    # Usage example
-    service = EssayPredictionService('model.h5', 'tokenizer.pickle')
+    service = EssayPredictionService('./data/model.h5', './data/tokenizer.pickle')
     essay = "This is an example essay."
     prediction = service.predict_essay(essay)
     print(prediction)

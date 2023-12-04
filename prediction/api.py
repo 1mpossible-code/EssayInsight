@@ -12,5 +12,8 @@ def predict():
     return jsonify({'prediction': '{:.2f}'.format(prediction)})
 
 if __name__ == '__main__':
-    service = EssayPredictionService('model.h5', 'tokenizer.pickle')
+    # Usage example
+    import os
+    print(os.getcwd())
+    service = EssayPredictionService('./data/model.h5', './data/tokenizer.pickle')
     app.run()
