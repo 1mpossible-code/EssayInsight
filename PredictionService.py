@@ -4,11 +4,16 @@ from tensorflow.keras.models import load_model
 import pickle
 
 class EssayPredictionService:
-    def __init__(self, model_path, tokenizer_path, max_length=300):
-        self.model = load_model(model_path)
-        with open(tokenizer_path, 'rb') as handle:
-            self.tokenizer = pickle.load(handle)
-        self.max_length = max_length
+    _instance = None
+
+    def __new__(cls, model_path, tokenizer_path, max_length=300):
+        if cls._instance is None:
+            cls._instance = super().__new__(cls)
+            cls._instance.model = load_model(model_path)
+            with open(tokenizer_path, 'rb') as handle:
+                cls._instance.tokenizer = pickle.load(handle)
+            cls._instance.max_length = max_length
+        return cls._instance
     
     def predict_essay(self, essay):
         preprocessed_essay = self.preprocess_essay(essay)
