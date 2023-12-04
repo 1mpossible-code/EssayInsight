@@ -1,4 +1,4 @@
-from PredictionService import EssayPredictionService
+from EssayPredictionService import EssayPredictionService
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
