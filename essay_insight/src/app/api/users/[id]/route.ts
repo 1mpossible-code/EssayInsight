@@ -5,7 +5,6 @@ export async function GET(
   req: Request,
   { params }: { params: { id: string } }
 ) {
-  console.log(params);
   const item_id = params.id;
 
   if (!item_id) {
@@ -32,4 +31,21 @@ export async function GET(
   return NextResponse.json(users[0]);
 }
 
-// export async function GET(
+// export async function PUT(
+//   req: NextRequest,
+//   { params }: { params: { id: string } }
+// ) {
+//   const item_id = params.id;
+//   const new_json = await req.json();
+
+//   if (!item_id) {
+//     return NextResponse.json(
+//       { error: 'Missing ID parameter' },
+//       { status: 400 }
+//     );
+//   }
+//   const sql = `UPDATE * FROM c WHERE c.id = "${item_id}
+//   SET"`;
+
+//   // const {resources:users} = await container.items.upsert()
+// }
