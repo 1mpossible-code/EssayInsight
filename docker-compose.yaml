@@ -1,0 +1,20 @@
+version: '3'
+services:
+  flask:
+    image: python:3.11.6
+    ports:
+      - 5001:5001
+    volumes:
+      - ./requirements.txt:/prediction/requirements.txt
+      - ./prediction:/prediction
+    working_dir: /prediction
+    command: sh -c "pip install -r requirements.txt && python api.py"
+
+  nextjs:
+    image: node:20.8.0
+    ports:
+      - 3000:3000
+    volumes:
+      - ./essay_insight:/app
+    working_dir: /app
+    command: npm install && npm build && npm start
