@@ -1,5 +1,7 @@
 # EssayInsight
 
+![Demo](./demo.gif)
+
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Features](#features)
@@ -8,11 +10,11 @@
 5. [Usage](#usage)
 6. [How to Contribute](#how-to-contribute)
 7. [License](#license)
-8. [Team](#team)
+8. [Contributors](#contributors)
 9. [Acknowledgements](#acknowledgements)
 
 ## Introduction
-EssayInsight is a web application that provides feedback on IELTS essays. It uses a machine learning model to predict the score of an essay and provides feedback on the essay based on the predicted score. The model was trained on a dataset of 1000 essays that were scored by IELTS examiners. The model was trained using TensorFlow and was deployed using Flask. The web application was built using Next.js.
+EssayInsight is a web application that provides feedback on essays. It uses a machine learning model to predict the score of an essay and provides feedback on the essay based on the predicted score. The model was trained on a dataset of 1000 essays that were scored by IELTS examiners. The model was trained using TensorFlow and was deployed using Flask. The web application was built using Next.js.
 
 ## Features
 Our web application provides the following features:
@@ -72,7 +74,6 @@ Use the following command to make a request to the API:
 curl -X POST -H "Content-Type: application/json" -d '{"essay": "This is a sample essay."}' http://localhost:5001/predict
 ```
 
-![Screenshot or GIF](url-to-image)
 
 ## How to Contribute
 To contribute to this project, follow the steps below:
@@ -86,7 +87,7 @@ To contribute to this project, follow the steps below:
 ## License
 This project is licensed under the [3-Clause BSD](LICENSE) license.
 
-## Team
+## Contributors
 - [1mpossible-code](https://github.com/1mpossible-code)
 - [gsiri-code](https://github.com/gsiri-code)
 
