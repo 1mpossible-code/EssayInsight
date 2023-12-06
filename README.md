@@ -12,7 +12,7 @@
 9. [Acknowledgements](#acknowledgements)
 
 ## Introduction
-EssayInsight is a web application that provides feedback on IELTS essays. It uses a machine learning model to predict the score of an essay and provides feedback on the essay based on the predicted score. The model was trained on a dataset of 1000 essays that were scored by IELTS examiners. The model was trained using TensorFlow and was deployed using Flask. The web application was built using Next.js and is hosted on Microsoft Azure.
+EssayInsight is a web application that provides feedback on IELTS essays. It uses a machine learning model to predict the score of an essay and provides feedback on the essay based on the predicted score. The model was trained on a dataset of 1000 essays that were scored by IELTS examiners. The model was trained using TensorFlow and was deployed using Flask. The web application was built using Next.js.
 
 ## Features
 Our web application provides the following features:
@@ -26,7 +26,6 @@ IELTS examiners use a rubric to score essays. The rubric consists of 4 categorie
 The optimal length of an essay if 250 words with a minimum of 150 words and a maximum of 300 words. For the best results, the essay should be between 250-300 words.
 
 ## Technologies Used
-- [Microsoft Azure](https://azure.microsoft.com/)
 - [TensorFlow](https://www.tensorflow.org/)
 - [Docker](https://www.docker.com/)
 - [Next.js](https://nextjs.org/)
@@ -34,9 +33,6 @@ The optimal length of an essay if 250 words with a minimum of 150 words and a ma
 
 
 ## Setup and Installation
-The web application is hosted on Microsoft Azure. And can be accessed at [EssayInsight]().
-
-### Local Installation
 
 Since we created our release using Docker, it is very easy to set up the project locally. You can use the following commands to set up the project locally.
 
@@ -49,8 +45,6 @@ docker-compose up
 _Note: to stop the containers, use `docker-compose down` or Ctrl+C in the terminal, while the containers are running._
 
 ## Usage
-
-Our hosted solution can be accessed at [EssayInsight](). 
 
 ### Local Usage
 
