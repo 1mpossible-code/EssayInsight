@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const TextInput = () => {
   const [essay, setEssay] = useState("");
-  const [prediction, setPrediction] = useState<number | null>(6);
+  const [prediction, setPrediction] = useState<number | null>(null);
 
   const handleEvaluate = async (e: any) => {
     e.preventDefault();
