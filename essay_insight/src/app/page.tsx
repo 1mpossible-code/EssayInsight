@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Title from './components/Title';
 import Head from 'next/head';
 import Corner from './components/decor/Corner';
+import DemoButton from './components/DemoButton';
+import TextInput from './components/TextInput';
 
 export const metadata: Metadata = {
   title: 'EssayInsight',
@@ -16,7 +18,13 @@ export default function Home() {
       </Head>
       <main className="bg-color=F5F5C6">
         <Corner />
-        <Title />
+        <header>
+          <Title />
+        </header>
+        <section>
+          <DemoButton />
+          <TextInput />
+        </section>
       </main>
     </div>
   );
