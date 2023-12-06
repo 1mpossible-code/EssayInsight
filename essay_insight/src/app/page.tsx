@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import Title from './components/Title';
-import Head from 'next/head';
-import Corner from './components/decor/Corner';
 import DemoButton from './components/DemoButton';
 import TextInput from './components/TextInput';
+import MoreInfo from './components/MoreInfo';
+import CornerTop from './components/decor/CornerTop';
+import CornerBottom from './components/decor/CornerBottom';
 
 export const metadata: Metadata = {
   title: 'EssayInsight',
@@ -13,15 +14,12 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="m-0 p-0 box-border ">
-      <Head>
-        <title>EssayInsight</title>
-      </Head>
-      <main className="bg-color=F5F5C6">
-        <Corner />
+      <main className="flex flex-col h-screen">
+        <CornerTop />
         <header>
           <Title />
         </header>
-        <section>
+        <section className="flex flex-col items-center">
           <DemoButton />
           <TextInput />
         </section>

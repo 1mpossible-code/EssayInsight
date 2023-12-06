@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Title = () => {
   return (
-    <div className={' flex justify-center  relative top-[25px]'}>
+    <div className={'flex justify-center relative mt-16 mb-16'}>
       <Image
         src={logo}
         alt="Logo"

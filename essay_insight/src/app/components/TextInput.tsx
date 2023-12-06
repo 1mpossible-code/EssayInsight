@@ -1,15 +1,18 @@
 const TextInput = () => {
   return (
-    <div className=" text-[#F5F5C6] p-[5px] py-2 lg:w-[30vw] w-[52.5vw] h-[36vh] rounded-lg mx-auto relative top-[7rem] bg-[#93C291;] ">
+    <div className=" shadow-lg z-50 mt-16 text-[#F5F5C6] p-1 py-2 md:w-[320px] lg:w-[500px] w-11/12 mx-auto h-[36vh] rounded-lg mx-auto bg-[#93C291] ">
       <form action="">
-        <textarea className="text-xs  w-full h-[28vh]  bg-[#789F76] rounded-lg h-3/4" />
+        <textarea
+          className="p-1 placeholder-slate-50 text-white text-lg  w-full h-[26.5vh]  bg-[#789F76] rounded-lg h-3/4"
+          placeholder="Nostrud sit cupidatat id nostrud deserunt dolore adipisicing Lorem. Aliqua elit nostrud laborum id amet irure sunt. Laboris occaecat labore commodo proident."
+        />
         <div className="flex font-medium justify-between">
-          <button className="text-[12px]   bg-secondary p-2 py-[5px] rounded-lg">
+          <button className="text-lg bg-secondary p-2 py-[5px] rounded-lg">
             Evaluate
           </button>
-          <div className="flex  ">
-            <h4 className="relative right-1 top-[2.5px] text-[14px]">Score:</h4>
-            <div className="rounded-lg py-[2px] px-2 flex bg-[#789F76]">
+          <div className="flex gap-3 items-center">
+            <h4 className="text-md">Score:</h4>
+            <div className="rounded-lg py-2 px-3 flex text-lg bg-[#789F76]">
               <h2>%</h2>
               <h2>00</h2>
             </div>
