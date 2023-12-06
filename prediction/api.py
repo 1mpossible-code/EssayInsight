@@ -16,4 +16,4 @@ if __name__ == '__main__':
     import os
     print(os.getcwd())
     service = EssayPredictionService('./data/model.h5', './data/tokenizer.pickle')
-    app.run()
+    app.run(port=5001, host='0.0.0.0')
